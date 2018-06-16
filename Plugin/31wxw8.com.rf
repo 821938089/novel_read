@@ -1,0 +1,62 @@
+[configuration]
+
+domain=31wxw8.com
+
+format=
+
+dir_tagname=div
+dir_att_name=id
+dir_att_con=readerlist
+
+dir_title_tagname=h1
+dir_title_name=
+dir_title_con=
+
+dir_title_add_n=0
+
+novel_title_tagname=h1
+novel_title_name=
+novel_title_con=
+
+novel_tagname=div
+novel_att_name=id
+novel_att_con=content
+
+resort=
+
+[search]
+
+address=http://zhannei.baidu.com/cse/search?s=11753446663229651373&entry=1&ie=gbk&q=$q
+;$q 搜索内容 要编码
+
+q_encode=gbk
+;搜索内容的编码 gbk utf8
+
+q_min=2
+;搜索内容最小长度 单位字节 1个中文字符=2字节
+
+method=get
+; 发送方法get/post
+
+post_data=
+;发送数据内容 $q 搜索内容 要编码
+
+analyze_data_method=1
+;分析数据方式 1=正则 2=取文本（暂时没有）
+
+
+regular_expression_text=<a cpos="title" href="(.*?)" title="(.*?)" class="result-game-item-title-link" target="_blank">\r\n[\s\S]*?\r\n                            <span class="result-game-item-info-tag-title preBold">.*?</span>\r\n                                                            <span>\r\n                                                                            (.*?)\r\n                                                                    </span>
+;搜索结果正则文本
+
+use_automatic_jump=0
+;使用自动跳转，网页支持自动跳转请务必打开，有些网页搜索时会直接跳到对应小说，直接跳过文本匹配 0关 1开
+
+
+regular_address=1
+regular_author=3
+regular_name=2
+;regular_new_chapter=
+regular_spare_1=
+
+regular_expression_add=
+;匹配章节列表地址 留空则默认上个地址为章节列表

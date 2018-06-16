@@ -1,0 +1,26 @@
+[configuration]
+
+domain=qududu.net
+
+format=
+
+dir_tagname=div
+dir_att_name=id
+dir_att_con=kui-book-show
+
+dir_title_tagname=div
+dir_title_name=class
+dir_title_con=kui-left kui-fs32
+
+dir_title_add_n=0
+
+novel_title_tagname=h1
+novel_title_name=class
+novel_title_con=kui-fs32 kui-ac
+
+novel_tagname=div
+novel_att_name=id
+novel_att_con=kui-page-read-txt
+
+resort=
+
